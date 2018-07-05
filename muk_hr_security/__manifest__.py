@@ -21,7 +21,7 @@
     "name": "MuK HR Security",
     "summary": """Security Features""",
     "version": "11.0.1.0.0",
-    "category": "Extra Tools",
+    "category": "Hidden",
     "license": "AGPL-3",
     "website": "http://www.mukit.at",
     "live_test_url": "https://demo.mukit.at/web/login",
