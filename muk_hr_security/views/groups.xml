@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--     
+	Copyright (C) 2017 MuK IT GmbH
+	
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+-->
+
+<odoo>
+
+<record id="view_security_groups_form" model="ir.ui.view">
+	<field name="name">muk_security_groups.form</field>
+	<field name="model">muk_security.groups</field>
+	<field name="inherit_id" ref="muk_security.view_security_groups_form" />
+	<field name="arch" type="xml">
+		<xpath expr="//notebook//page[last()]" position="before">
+			<page string="Departments">
+				<field name="departments">
+					<tree string="Departments">
+						<field name="name" />
+						<field name="parent_id" />
+						<field name="manager_id" />
+					</tree>
+				</field>
+			</page>
+			<page string="Jobs">
+				<field name="jobs">
+					<tree string="Jobs">
+						<field name="name" />
+						<field name="department_id" />
+					</tree>
+				</field>
+			</page>
+		</xpath>
+	</field>
+</record>
+		
+</odoo>
