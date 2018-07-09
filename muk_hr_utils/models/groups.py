@@ -19,7 +19,7 @@
 
 from odoo import models, fields, api
 
-class Groups(models.Model):
+class Groups(models.AbstractModel):
 
     _inherit = 'muk_utils.groups'
     
