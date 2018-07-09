@@ -34,7 +34,6 @@
         "muk_utils",
     ],
     "data": [
-        "views/groups.xml",
     ],
     "qweb": [
         "static/src/xml/*.xml",
