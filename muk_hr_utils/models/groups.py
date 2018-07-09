@@ -58,13 +58,13 @@ class Groups(models.AbstractModel):
     @api.model
     def check_user_values(self, values):
         check = any(field in values for field in ['departments', 'jobs'])
-        if super(AccessGroups, self).check_user_values(values) or check:
+        if super(Groups, self).check_user_values(values) or check:
             return True
         return False
 
     @api.multi
     def get_users(self):
-        users = super(AccessGroups, self).get_users()
+        users = super(Groups, self).get_users()
         employees = self.env['hr.employee']
         employees |= self.departments.mapped('manager_id')
         employees |= self.departments.mapped('member_ids')
