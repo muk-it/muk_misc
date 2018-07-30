@@ -1,6 +1,6 @@
-==============
+=========================
 MuK Import Bank Statement 
-==============
+=========================
 
 Import bank statements from a variety of formats directly into Odoo. The fields
 "date", "name" and "amount" are mandatory, but can be assigned to any column using
