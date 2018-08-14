@@ -22,7 +22,7 @@
     'summary': 'Financial and Analytic Accounting',
     'version': '12.0.1.0.0',   
     'category': 'Accounting',   
-    'license': 'LGPL-3',
+    'license': 'AGPL-3',
     'author': 'MuK IT',
     'website': 'https://www.mukit.at',
     'live_test_url': 'https://demo.mukit.at/web/login',
