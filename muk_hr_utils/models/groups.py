@@ -70,6 +70,6 @@ class Groups(models.AbstractModel):
         employees |= self.departments.mapped('member_ids')
         employees |= self.jobs.mapped('employee_ids')
         for employee in employees:
-            self += employee.user_id
+            users += employee.user_id
         return users
         
