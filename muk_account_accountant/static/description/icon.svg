@@ -1,1 +1,41 @@
-Æioz»"¢
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Gravit.io -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 250 250" width="250" height="250">
+   <defs>
+      <filter id="PQKSoWXBhaWZonsjz0RL10Ro4TENf3GD" x="-200%" y="-200%" width="400%" height="400%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+         <feOffset in="SourceGraphic" dx="0" dy="3" />
+         <feGaussianBlur stdDeviation="2.146804531419514" result="pf_100_offsetBlur" />
+         <feComposite in="SourceGraphic" in2="pf_100_offsetBlur" result="pf_100_inverse" operator="out" />
+         <feFlood flood-color="#FFFFFF" flood-opacity="0.5" result="pf_100_color" />
+         <feComposite in="pf_100_color" in2="pf_100_inverse" operator="in" result="pf_100_shadow" />
+         <feComposite in="pf_100_shadow" in2="SourceGraphic" operator="over" result="_out_5Iz3r3W4MNG7IvGr4OhQgjy4szhfFFDR" />
+         <feOffset in="_out_5Iz3r3W4MNG7IvGr4OhQgjy4szhfFFDR" dx="0" dy="-3" />
+         <feGaussianBlur stdDeviation="2.146804531419514" result="pf_101_offsetBlur" />
+         <feComposite in="_out_5Iz3r3W4MNG7IvGr4OhQgjy4szhfFFDR" in2="pf_101_offsetBlur" result="pf_101_inverse" operator="out" />
+         <feFlood flood-color="#000000" flood-opacity="0.5" result="pf_101_color" />
+         <feComposite in="pf_101_color" in2="pf_101_inverse" operator="in" result="pf_101_shadow" />
+         <feComposite in="pf_101_shadow" in2="_out_5Iz3r3W4MNG7IvGr4OhQgjy4szhfFFDR" operator="over" result="_out_r6Yba5XHCBx8wNL7rRBq4KR9RFSzDaS0" />
+         <feMerge>
+            <feMergeNode in="_out_r6Yba5XHCBx8wNL7rRBq4KR9RFSzDaS0" />
+         </feMerge>
+      </filter>
+   </defs>
+   <g filter="url(#PQKSoWXBhaWZonsjz0RL10Ro4TENf3GD)">
+      <path d="M 15 0 L 235 0 C 243.279 0 250 6.721 250 15 L 250 235 C 250 243.279 243.279 250 235 250 L 15 250 C 6.721 250 0 243.279 0 235 L 0 15 C 0 6.721 6.721 0 15 0 Z" style="stroke:none;fill:#5BB5A5;stroke-miterlimit:10;" />
+   </g>
+   <g id="Group" filter="url(#8S0pfqMnr0LiLJezSlBXFPCIU4gobWUb)">
+      <path d=" M 131.686 141.83 L 116.861 137.385 C 115.145 136.879 113.951 135.233 113.951 133.404 C 113.951 131.112 115.763 129.255 118 129.255 L 127.102 129.255 C 128.776 129.255 130.423 129.775 131.796 130.732 C 132.634 131.308 133.759 131.168 134.473 130.45 L 139.25 125.668 C 140.225 124.698 140.087 123.08 139.003 122.222 C 135.64 119.521 131.439 118.016 127.129 118.002 L 127.129 111.251 C 127.129 110.013 126.141 109 124.933 109 L 120.54 109 C 119.332 109 118.344 110.013 118.344 111.251 L 118.344 118.002 L 118 118.002 C 109.256 118.002 102.228 125.696 103.038 134.825 C 103.614 141.309 108.446 146.584 114.541 148.413 L 128.612 152.632 C 130.327 153.153 131.522 154.784 131.522 156.613 C 131.522 158.906 129.71 160.762 127.472 160.762 L 118.371 160.762 C 116.696 160.762 115.049 160.242 113.676 159.285 C 112.839 158.709 111.713 158.849 110.999 159.567 L 106.222 164.349 C 105.248 165.32 105.385 166.937 106.469 167.795 C 109.833 170.496 114.033 172.001 118.344 172.015 L 118.344 178.767 C 118.344 180.004 119.332 181.017 120.54 181.017 L 124.933 181.017 C 126.141 181.017 127.129 180.004 127.129 178.767 L 127.129 171.987 C 133.526 171.86 139.525 167.964 141.639 161.761 C 144.59 153.096 139.634 144.207 131.686 141.83 L 131.686 141.83 Z " id="dollar-sign-solid" fill="rgb(255,255,255)" />
+      <path d="M 86.642 85.119 L 122.045 85.119 C 123.676 85.119 125 86.443 125 88.074 L 125 91.193 C 125 92.824 123.676 94.148 122.045 94.148 L 86.642 94.148 C 85.011 94.148 83.687 92.824 83.687 91.193 L 83.687 88.074 C 83.687 86.443 85.011 85.119 86.642 85.119 Z" style="stroke:none;fill:#FFFFFF;stroke-miterlimit:10;" />
+      <path d="M 86.642 65.347 L 122.045 65.347 C 123.676 65.347 125 66.671 125 68.302 L 125 71.421 C 125 73.052 123.676 74.376 122.045 74.376 L 86.642 74.376 C 85.011 74.376 83.687 73.052 83.687 71.421 L 83.687 68.302 C 83.687 66.671 85.011 65.347 86.642 65.347 Z" style="stroke:none;fill:#FFFFFF;stroke-miterlimit:10;" />
+      <path d=" M 180.816 76.627 Q 183.054 78.848 184.652 82.654 Q 186.251 86.461 186.251 89.633 L 186.5 195.895 Q 186.5 199.068 184.262 201.288 Q 182.025 203.509 178.828 203.509 L 71.421 203.509 Q 68.225 203.065 65.987 200.845 Q 63.749 198.624 63.749 195.452 L 63.5 54.105 Q 63.5 50.932 65.738 48.712 Q 67.975 46.491 71.172 46.491 L 142.776 46.491 Q 145.973 46.491 149.809 48.077 Q 153.645 49.664 155.883 51.884 L 180.816 76.627 Z  M 145.334 57.277 L 145.334 87.095 L 175.382 87.095 Q 174.583 84.796 173.624 83.844 L 148.61 59.022 Q 147.651 58.07 145.334 57.277 Z  M 176.271 193.358 L 176.021 97.246 L 142.776 97.246 Q 139.58 97.246 137.342 95.026 Q 135.104 92.805 135.104 89.633 L 135.104 56.642 L 73.729 56.642 L 73.979 193.358 L 176.271 193.358 Z " id="Download" fill="rgb(255,255,255)" />
+   </g>
+   <defs>
+      <filter id="8S0pfqMnr0LiLJezSlBXFPCIU4gobWUb" x="-200%" y="-200%" width="400%" height="400%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+         <feGaussianBlur in="SourceGraphic" stdDeviation="2.146804531419514" />
+         <feOffset dx="-5" dy="5" result="pf_100_offsetBlur" />
+         <feFlood flood-color="#000000" flood-opacity="0.5" />
+         <feComposite in2="pf_100_offsetBlur" operator="in" result="pf_100_dropShadow" />
+         <feBlend in="SourceGraphic" in2="pf_100_dropShadow" mode="normal" />
+      </filter>
+   </defs>
+</svg>
