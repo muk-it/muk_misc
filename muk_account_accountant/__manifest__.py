@@ -20,7 +20,7 @@
 {
     'name': 'MuK Accounting and Finance',
     'summary': 'Financial and Analytic Accounting',
-    'version': '12.0.1.0.1',   
+    'version': '12.0.1.0.2',   
     'category': 'Accounting',   
     'license': 'AGPL-3',
     'author': 'MuK IT',
@@ -38,7 +38,9 @@
     'data': [
         'security/accountant_security.xml',
         'views/accountant_menu.xml',
+        'views/digest_views.xml',
         'views/res_config_settings_view.xml',
+        'data/digest_data.xml',
     ],
     'demo': [
         'demo/accountant_demo.xml',

@@ -17,4 +17,5 @@
 #
 ###################################################################################
 
-from . import models
+from . import digest
+from . import res_config_settings
