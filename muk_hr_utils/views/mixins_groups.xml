@@ -19,10 +19,10 @@
 
 <odoo>
 
-<record id="view_groups_form" model="ir.ui.view">
-	<field name="name">muk_utils_groups.form</field>
-	<field name="model">muk_utils.groups</field>
-    <field name="inherit_id" ref="muk_utils.view_groups_form"/>
+<record id="view_mixins_groups_form" model="ir.ui.view">
+	<field name="name">muk_utils_mixins_groups.form</field>
+	<field name="model">muk_utils.mixins.groups</field>
+    <field name="inherit_id" ref="muk_utils.view_mixins_groups_form"/>
 	<field name="arch" type="xml">
 		<xpath expr="//notebook//page[last()]" position="before">
 			<page string="Departments">

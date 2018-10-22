@@ -21,7 +21,7 @@ from odoo import models, fields, api
 
 class Groups(models.AbstractModel):
 
-    _inherit = 'muk_utils.groups'
+    _inherit = 'muk_utils.mixins.groups'
     
     #----------------------------------------------------------
     # Database
@@ -33,9 +33,8 @@ class Groups(models.AbstractModel):
         def add(name, field):
             if name not in self._fields:
                 self._add_field(name, field)
-        base, model = self._name.split(".")
         add('departments', fields.Many2many(
-            _module=base,
+            _module=self._module,
             comodel_name='hr.department',
             relation='%s_department_rel' % (self._table),
             column1='gid',
@@ -43,7 +42,7 @@ class Groups(models.AbstractModel):
             string='Departments',
             automatic=True))
         add('jobs', fields.Many2many(
-            _module=base,
+            _module=self._module,
             comodel_name='hr.job',
             relation='%s_job_rel' % (self._table),
             column1='gid',

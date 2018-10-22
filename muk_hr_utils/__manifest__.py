@@ -34,7 +34,7 @@
         "muk_utils",
     ],
     "data": [
-        "views/groups.xml",
+        "views/mixins_groups.xml",
     ],
     "qweb": [
         "static/src/xml/*.xml",
