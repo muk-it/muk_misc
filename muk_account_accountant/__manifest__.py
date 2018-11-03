@@ -20,8 +20,8 @@
 {
     'name': 'MuK Accounting and Finance',
     'summary': 'Financial and Analytic Accounting',
-    'version': '12.0.1.0.3',   
-    'category': 'Accounting',   
+    'version': '12.0.1.0.4',   
+    'category': 'Accounting',
     'license': 'AGPL-3',
     'author': 'MuK IT',
     'website': 'https://www.mukit.at',
@@ -31,6 +31,7 @@
     ],
     'depends': [
         'account',
+        'muk_web_utils',
     ],
     'excludes': [
         'account_accountant',

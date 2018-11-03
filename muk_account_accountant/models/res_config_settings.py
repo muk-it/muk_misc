@@ -46,6 +46,10 @@ class ResConfigSettings(models.TransientModel):
         related='company_id.fiscalyear_lock_date',
         readonly=False)
     
+    module_muk_account_bank_statement_import_sheet = fields.Boolean(
+        string="Sheet Import",
+        help="Import your bank statements in CSV/XLS/XLSX/ODS.")
+    
     #----------------------------------------------------------
     # View
     #----------------------------------------------------------
