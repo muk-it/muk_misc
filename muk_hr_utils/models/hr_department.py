@@ -18,7 +18,6 @@
 ###################################################################################
 
 import logging
-
 from collections import defaultdict
 
 from odoo import api, fields, models
