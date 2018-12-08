@@ -59,7 +59,7 @@ class Department(models.Model):
             model = self.env[model_name].sudo()
             if not model._abstract:
                 model_recs[model_name] = model.search([['departments', 'in', self.mapped('id')]])
-        result = super(Department, self).unlink(vals)
+        result = super(Department, self).unlink()
         for tuple in model_recs.items():
             tuple[1].trigger_computation(['users'])
         return result
