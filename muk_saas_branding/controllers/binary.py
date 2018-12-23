@@ -30,6 +30,7 @@ from odoo.tools import config
 from odoo.http import request
 
 from odoo.addons.web.controllers.main import Binary
+from odoo.addons.muk_utils.tools.utils import safe_execute
 
 class Binary(Binary):
     
@@ -88,14 +89,14 @@ class Binary(Binary):
     
     @http.route(['/web/binary/company_logo', '/logo', '/logo.png'], type='http', auth="none")
     def company_logo(self, dbname=None, **kw):
-        company = int(kw['company']) if kw and kw.get('company') else False
+        company = safe_execute(False, int, kw['company']) if kw and kw.get('company') else False
         return self._get_company_image_response(
             dbname, 'logo_web', ('logo.png', 'nologo.png'), 'image/png', company
         )
         
     @http.route(['/web/binary/company_favicon', '/favicon', '/favicon.ico'], type='http', auth="none")
     def company_favicon(self, dbname=None, **kw):
-        company = int(kw['company']) if kw and kw.get('company') else False
+        company = safe_execute(False, int, kw['company']) if kw and kw.get('company') else False
         return self._get_company_image_response(
             dbname, 'favicon', ('favicon.ico', 'nofavicon.ico'), 'image/x-icon', company
         )
