@@ -2,9 +2,10 @@
 MuK SaaS Branding
 ================
 
-It introduces a new route to recive the favicon and adapts the existing route to
-receive the company logo to. You can also use parameters in the configuration file
-to specify the images and links on the database manager page.
+This module complements the Branding Module. It introduces a new route to recive the
+favicon and adapts the existing route to receive the company logo to. You can also
+use parameters in the configuration file to specify the images and links on the
+database manager page.
 
 Installation
 ============
