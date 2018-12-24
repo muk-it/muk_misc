@@ -45,7 +45,7 @@
         "python": [],
         "bin": [],
     },
-    "auto_install": False,
+    'auto_install': True,
     "application": False,
     "installable": True,
     "post_init_hook": "_install_debrand_system",
