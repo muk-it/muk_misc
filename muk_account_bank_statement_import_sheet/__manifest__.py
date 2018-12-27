@@ -18,8 +18,8 @@
 ###################################################################################
 
 {
-    "name": "Import CSV/XLS/XLSX/ODS Bank Statement",
-    "summary": """Bank Statement Import Wizard""",
+    "name": "MuK Bank Statement Import",
+    "summary": """CSV/XLS/XLSX/ODS Import Wizard""",
     "version": "12.0.2.0.0",
     "category": "Accounting",
     "license": "AGPL-3",

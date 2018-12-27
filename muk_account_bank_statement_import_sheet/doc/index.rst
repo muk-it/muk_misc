@@ -1,5 +1,5 @@
 =========================
-MuK Import Bank Statement 
+MuK Bank Statement Import
 =========================
 
 Import bank statements from a variety of formats directly into Odoo. The fields
