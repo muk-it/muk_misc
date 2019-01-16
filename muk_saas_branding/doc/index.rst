@@ -86,6 +86,13 @@ file or passing a load parameter to the start script.
 				
 Parameter: ``--load=web,muk_saas_branding``
 
+The following fields can be modified in the config file:
+
+* database_manager_system_name
+* database_manager_system_logo_url
+* database_manager_system_favicon_url
+* database_manager_privacy_policy_url
+
 Usage
 =============
 
