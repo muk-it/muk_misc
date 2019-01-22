@@ -20,7 +20,7 @@
 {
     "name": "MuK Mail Branding",
     "summary": """Branding Features""",
-    "version": "12.0.1.0.0",
+    "version": "12.0.1.0.1",
     "category": "Discuss",
     "license": "AGPL-3",
     "website": "http://www.mukit.at",
@@ -30,7 +30,7 @@
         "Mathias Markl <mathias.markl@mukit.at>",
     ],
     "depends": [
-        "mail",
+        "mail_bot",
         "muk_web_branding",
     ],
     "data": [
