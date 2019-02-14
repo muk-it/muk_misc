@@ -19,7 +19,7 @@
 
 {
     "name": "MuK SaaS Branding",
-    "summary": """Branding Features""",
+    "summary": """Branding and Debranding""",
     "version": "12.0.1.0.1",
     "category": "Extra Tools",
     "license": "AGPL-3",
