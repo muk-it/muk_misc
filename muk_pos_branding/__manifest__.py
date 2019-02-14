@@ -19,7 +19,7 @@
 
 {
     "name": "MuK PoS Branding",
-    "summary": """Branding Features""",
+    "summary": """Branding and Debranding""",
     "version": "12.0.1.0.0",
     "category": 'Point Of Sale',
     "license": "AGPL-3",
