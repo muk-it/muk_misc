@@ -100,19 +100,19 @@ Contributors
 
 * Mathias Markl <mathias.markl@mukit.at>
 
-Source Code
-------------
-
-Some parts of the code are based on or inspired by Odoo.
-
-* `Odoo <https://github.com/odoo/odoo>`_
-
 Images
 ------------
 
 Some pictures are based on or inspired by the icon set of Font Awesome:
 
 * `Font Awesome <https://fontawesome.com>`_
+
+Projects
+------------
+
+Parts of the module are based on or inspired by:
+
+* `Odoo <https://github.com/odoo/odoo>`_
 
 Author & Maintainer
 -------------------
