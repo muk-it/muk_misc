@@ -26,6 +26,8 @@ from odoo import _
 from odoo import api, models
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
 
+from odoo.addons.base_import.models.base_import import FIELDS_RECURSION_LIMIT
+
 _logger = logging.getLogger(__name__)
 
 class AccountBankStatementImportWizard(models.TransientModel):
@@ -34,98 +36,15 @@ class AccountBankStatementImportWizard(models.TransientModel):
     _inherit = "base_import.import"
 
     @api.model
-    def get_fields(self, model, depth=2):
-        return [{  
-            'id':'date',
-            'name':'date',
-            'string':'Date',
-            'required':True,
-            'fields':[],
-            'type':'date'
-        }, {  
-            'id':'name',
-            'name':'name',
-            'string':'Label',
-            'required':True,
-            'fields':[],
-            'type':'char'
-        }, {  
-            'id':'partner_name',
-            'name':'partner_name',
-            'string':'Partner Name',
+    def get_fields(self, model, depth=FIELDS_RECURSION_LIMIT):
+        fields = super(AccountBankStatementImportWizard, self).get_fields(model, depth=depth)
+        fields.extend([{
+            'id':'unique_import_id',
+            'name':'unique_import_id',
+            'string':'Import ID',
             'required':False,
             'fields':[],
-            'type':'char'
-        }, {  
-            'id':'partner_id',
-            'name':'partner_id',
-            'string':'Partner',
-            'required':False,
-            'fields':[{  
-                'id':'partner_id',
-                'name':'id',
-                'string':'External ID',
-                'required':False,
-                'fields':[],
-                'type':'id'
-            }, {  
-                'id':'partner_id',
-                'name':'.id',
-                'string':'Database ID',
-                'required':False,
-                'fields':[],
-                'type':'id'
-            }],
-            'type':'many2one'
-        }, {  
-            'id':'ref',
-            'name':'ref',
-            'string':'Reference',
-            'required':False,
-            'fields':[],
-            'type':'char'
-        }, {  
-            'id':'note',
-            'name':'note',
-            'string':'Notes',
-            'required':False,
-            'fields':[],
-            'type':'text'
-        }, {  
-            'id':'amount',
-            'name':'amount',
-            'string':'Amount',
-            'required':False,
-            'fields':[],
-            'type':'monetary'
-        }, {  
-            'id':'amount_currency',
-            'name':'amount_currency',
-            'string':'Amount Currency',
-            'required':False,
-            'fields':[],
-            'type':'monetary'
-        }, {  
-            'id':'currency_id',
-            'name':'currency_id',
-            'string':'Currency',
-            'required':False,
-            'fields':[{  
-                'id':'currency_id',
-                'name':'id',
-                'string':'External ID',
-                'required':False,
-                'fields':[],
-                'type':'id'
-            }, {  
-                'id':'currency_id',
-                'name':'.id',
-                'string':'Database ID',
-                'required':False,
-                'fields':[],
-                'type':'id'
-            }],
-            'type':'many2one'
+            'type':'char',
         }, {
             'id':'balance',
             'name':'balance',
@@ -133,7 +52,8 @@ class AccountBankStatementImportWizard(models.TransientModel):
             'required':False,
             'fields':[],
             'type':'monetary',
-        }]
+        }])
+        return fields
 
     def _parse_float(self, value):
         return float(value) if value else 0.0
