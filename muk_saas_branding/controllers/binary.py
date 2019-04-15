@@ -65,7 +65,6 @@ class Binary(Binary):
         
     def _get_company_image_response(self, dbname, field, placeholders, default_mimetype, company=None):
         placeholder = self._get_company_image_placeholder()
-        uid = SUPERUSER_ID
         if request.session.db:
             dbname = request.session.db
             uid = request.session.uid
@@ -74,6 +73,7 @@ class Binary(Binary):
         if not dbname:
             response = http.send_file(placeholder(placeholders[0]))
         else:
+            uid = uid if uid else SUPERUSER_ID
             company_data = self._get_company_image_data(dbname, uid, field, company)
             if company_data and company_data[0]:
                 image_data = base64.b64decode(company_data[0])
