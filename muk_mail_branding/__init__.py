@@ -35,11 +35,12 @@ def _install_debrand_system(cr, registry):
     if version_info[5] != 'e':
         env = api.Environment(cr, SUPERUSER_ID, {})
         domain = env.ref('base.ir_cron_act').domain
-        record = env.ref('mail.ir_cron_module_update_notification')
-        domain = domain.replace("('id', '!=', %d)" % record.id, "")
-        env.ref('base.ir_cron_act').write({
-            'domain': domain
-        })
+        record = env.ref('mail.ir_cron_module_update_notification', False)
+        if record and record.exists():
+            domain = domain.replace("('id', '!=', %d)" % record.id, "")
+            env.ref('base.ir_cron_act').write({
+                'domain': domain
+            })
         record.unlink()
         
 def _uninstall_rebrand_system(cr, registry):
