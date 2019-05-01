@@ -41,7 +41,7 @@ def _install_debrand_system(cr, registry):
             env.ref('base.ir_cron_act').write({
                 'domain': domain
             })
-        record.unlink()
+            record.unlink()
         
 def _uninstall_rebrand_system(cr, registry):
     if version_info[5] != 'e':
