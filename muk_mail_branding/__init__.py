@@ -37,37 +37,12 @@ def _install_debrand_system(cr, registry):
         domain = env.ref('base.ir_cron_act').domain
         record = env.ref('mail.ir_cron_module_update_notification', False)
         if record and record.exists():
-            domain = domain.replace("('id', '!=', %d)" % record.id, "")
             env.ref('base.ir_cron_act').write({
-                'domain': domain
+                'domain': "[]"
             })
             record.unlink()
         
 def _uninstall_rebrand_system(cr, registry):
     if version_info[5] != 'e':
-        env = api.Environment(cr, SUPERUSER_ID, {})
-        job = env['ir.cron'].create({
-            'name': "Publisher: Update Notification",
-            'model_id': env.ref('mail.model_publisher_warranty_contract').id,
-            'state': "code",
-            'code': "model.update_notification(None)",
-            'user_id': env.ref('base.user_root').id,
-            'interval_number': 1,
-            'interval_type': "weeks",
-            'numbercall': -1,
-            'nextcall': (datetime.datetime.now() + datetime.timedelta(days=7)).strftime('%Y-%m-%d %H:%M:%S'),
-            'doall': False,
-            'priority': 1000,
-        })
-        domain = ast.literal_eval(env.ref('base.ir_cron_act').domain)
-        env.ref('base.ir_cron_act').write({
-            'domain': osv.expression.AND([domain, [('id','!=', job)]])
-        })
-        env['ir.model.data'].create({
-            'name': 'ir_cron_module_update_notification',
-            'model': 'ir.cron',
-            'module': 'mail',
-            'res_id': job.id,
-            'noupdate': True,
-        })
-        
+        filename = get_module_resource('mail', 'data', 'ir_cron_data.xml')
+        convert_file(cr, 'mail', filename, {}, 'init', False, 'data', registry._assertion_report)
