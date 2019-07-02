@@ -20,7 +20,7 @@
 {
     "name": "MuK Mail Branding",
     "summary": """Branding and Debranding""",
-    "version": "12.0.1.0.5",
+    "version": "12.0.1.1.0",
     "category": "Discuss",
     "license": "AGPL-3",
     "website": "http://www.mukit.at",
@@ -35,6 +35,7 @@
     ],
     "data": [
         "data/users.xml",
+        "views/res_config_settings_view.xml",
     ],
     "qweb": [
         "static/src/xml/*.xml",

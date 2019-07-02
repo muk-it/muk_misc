@@ -21,3 +21,4 @@ from . import contract
 from . import res_users
 from . import mail_template
 from . import mail_channel
+from . import res_config_settings
