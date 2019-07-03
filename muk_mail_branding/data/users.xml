@@ -17,11 +17,10 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>. 
 -->
 
-<odoo>
+<odoo noupdate="1">
         
     <record id="base.partner_root" model="res.partner">
         <field name="name">Bot</field>
-        <field name="image"></field>
         <field name="email">bot@example.com</field>
     </record>
 
