@@ -64,10 +64,10 @@ class Binary(Binary):
             return None
         
     def _get_company_image_response(self, dbname, field, placeholders, default_mimetype, company=None):
+        uid = request.session.uid if request.session.db else None
         placeholder = self._get_company_image_placeholder()
         if request.session.db:
             dbname = request.session.db
-            uid = request.session.uid
         elif dbname is None:
             dbname = http.db_monodb()
         if not dbname:
