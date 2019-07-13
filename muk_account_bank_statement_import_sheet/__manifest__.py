@@ -22,7 +22,7 @@
     "summary": """CSV/XLS/XLSX/ODS Import Wizard""",
     "version": "12.0.2.0.2",
     "category": "Accounting",
-    "license": "AGPL-3",
+    "license": "LGPL-3",
     "website": "http://www.mukit.at",
     'live_test_url': 'https://mukit.at/r/SgN',
     "author": "MuK IT",
