@@ -110,7 +110,7 @@ Some pictures are based on or inspired by the icon set of Font Awesome:
 Projects
 ------------
 
-Parts of the module are based on or inspired by:
+Parts of the module are inspired by:
 
 * `Odoo <https://github.com/odoo/odoo>`_
 
