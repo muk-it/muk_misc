@@ -73,4 +73,3 @@ class Database(Database):
             if monodb:
                 d['databases'] = [monodb]
         return env.get_template("database_manager.html").render(d)
-    
