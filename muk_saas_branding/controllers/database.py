@@ -24,7 +24,7 @@ import os
 import sys
 import json
 
-from odoo import http, tools, service
+from odoo import http, tools, service, exceptions 
 from odoo.http import request, db_monodb, db_list
 
 from odoo.addons.web.controllers.main import DBNAME_PATTERN
@@ -68,7 +68,7 @@ class Database(Database):
         try:
             d['databases'] = db_list()
             d['incompatible_databases'] = service.db.list_db_incompatible(d['databases'])
-        except odoo.exceptions.AccessDenied:
+        except exceptions.AccessDenied:
             monodb = db_monodb()
             if monodb:
                 d['databases'] = [monodb]
